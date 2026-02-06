@@ -1,0 +1,213 @@
+﻿<html>
+<head>
+    <style>
+        .section-header{
+            font-size:18pt;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .wrapper {
+            width: 900px;
+            margin: 0 auto;
+            background-color: #fff;
+        }
+
+        /* 1. BANNER */
+        .banner {
+            width: 100%;
+            height: 250px;
+            overflow: hidden;
+        }
+
+            .banner img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+        /* 2. MENU */
+        #menu {
+            width: 100%;
+            height: 40px;
+            background-color: #333;
+            border-bottom: 3px solid #cc0000;
+        }
+
+            #menu a {
+                display: block;
+                width: 120px;
+                padding-top: 10px;
+                float: left;
+                text-align: center;
+                color: #fff;
+                text-decoration: none;
+                font-weight: bold;
+                cursor: pointer;
+            }
+
+                #menu a:hover {
+                    background-color: #cc0000;
+                }
+
+        /* 3. CHIA 2 CỘT CHÍNH */
+        .main-container {
+            padding: 20px 10px;
+        }
+
+        /* Cột trái: Danh mục tên sản phẩm */
+        .left-column {
+            width: 200px;
+            float: left;
+            border: 1px solid #ddd;
+            min-height: 400px;
+        }
+
+            .left-column .title {
+                background: #000;
+                color: #fff;
+                padding: 10px;
+                font-weight: bold;
+                text-align: center;
+            }
+
+            .left-column .list {
+                padding: 15px;
+                line-height: 2.5;
+            }
+
+        /* Cột phải: Chứa sản phẩm dàn hàng ngang */
+        .right-column {
+            width: 80%;
+            float: left;
+        }
+        .car-card{
+            width:26.7%;
+            float:left;
+            text-align:center;
+        }
+        .section-name {
+            font-weight: bold;
+            border-bottom: 2px solid #cc0000;
+            margin-bottom: 20px;
+            padding-bottom: 5px;
+        }
+
+        /* THIẾT LẬP 3 SẢN PHẨM HÀNG NGANG */
+        .product-item {
+            width: 210px;
+            float: left; 
+            margin-right: 20px;
+            border: 1px solid #eee;
+            text-align: center;
+            padding-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        /* Ô thứ 3 (cuối hàng) thì bỏ khoảng cách bên phải để không bị nhảy dòng */
+        .last-item {
+            margin-right: 0;
+        }
+
+        .product-item img {
+            width: 100%;
+            height: 130px;
+            object-fit: cover;
+            display: block;
+            background-color: #ccc;
+        }
+
+        .product-item p {
+            font-size: 13px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .price {
+            color: #cc0000;
+            font-weight: bold;
+        }
+        .section-header{
+
+        }
+        /* Xử lý lỗi Float */
+        .clear {
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner"><img src="banner.jpg" alt="Banner Showroom xe"></div>
+    <div id="menu">
+        <a href="#">Trang chủ</a>
+        <a href="#">Giới thiệu</a>
+        <a href="#">Dịch vụ</a>
+        <a href="#">Sản phẩm</a>
+        <a href="#">Liên hệ</a>
+    </div>
+
+    <div class="clear"></div>
+
+
+    <div class="clear"></div>
+    <div class="main-content">
+        <div class="left-column">
+            <div class="sidebar-title">HÃNG XE ĐANG BÁN</div>
+            <div class="category-list">
+                <div class="brand-group">
+                    <div><b>• TOYOTA</b></div>
+                    <div class="model-item">o Camry 2024</div>
+                    <div class="model-item">o Corolla Cross</div>
+                    <div class="model-item">o Vios</div>
+                </div>
+                <div class="brand-group">
+                    <div><b>• HYUNDAI</b></div>
+                    <div class="model-item">o SantaFe</div>
+                    <div class="model-item">o Tucson</div>
+                    <div class="model-item">o Accent</div>
+                </div>
+                <div class="brand-group">
+                    <div><b>• HONDA</b></div>
+                    <div class="model-item">o Civic</div>
+                    <div class="model-item">o CR-V</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-column">
+            <div class="section-header" style="text-align:center"><b>MẪU XE MỚI VỀ SHOWROOM</b></div>
+
+            <div class="car-card">
+                <img src="toyota2,5q.jpg" alt="Car">
+                <div class="car-name">Toyota Camry 2.5Q</div>
+                <span class="car-price">1.405.000.000 đ</span>
+                <button class="btn-detail">Xem chi tiết</button>
+            </div>
+
+            <div class="car-card">
+                <img src="hyundai.jpg" alt="Car">
+                <div class="car-name">Hyundai SantaFe Premium</div>
+                <span class="car-price">1.370.000.000 đ</span>
+                <button class="btn-detail">Xem chi tiết</button>
+            </div>
+
+            <div class="car-card"style="margin-left:60px" accesskey="">
+                <img src="honda.jpg" alt="Car" >
+                <div class="car-name">Honda CR-V LSE</div>
+                <span class="car-price">1.138.000.000 đ</span>
+                <button class="btn-detail">Xem chi tiết</button>
+            </div>
+
+            <div class="clear"></div>
+        </div>
+    </div>
+
+    <div class="clear"></div>
+    </div>
+
+</body>
+</html>
